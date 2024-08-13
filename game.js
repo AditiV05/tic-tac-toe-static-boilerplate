@@ -21,7 +21,7 @@ const winningConditions = [
 function handleCellPlayed(clickedButton, index) {
   gameState[index] = currentPlayer;
   clickedButton.innerText = currentPlayer;
-  clickedButton.style.color = currentPlayer === "X" ? "#FF6347" : "#4682B4";
+  clickedButton.style.color = currentPlayer === "X" ? "#1F316F" : "#982B1C";
 }
 
 function handleResultValidation() {
