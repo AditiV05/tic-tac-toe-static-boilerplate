@@ -10,6 +10,10 @@
 body {
   height: 100vh;
   background: #fef3e2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 html {
@@ -17,10 +21,6 @@ html {
 }
 
 .wrapper {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
   text-align: center;
 }
 
@@ -36,6 +36,10 @@ p {
 .container {
   width: 400px;
   height: 400px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
 }
 
 .button-option {
@@ -45,4 +49,54 @@ p {
   border: none;
   border-radius: 20px;
   display: inline-block;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-option:hover {
+  background-color: #4a8ab7;
+}
+
+.restart-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #ff6347;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.restart-button:hover {
+  background-color: #ff4f3a;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 30px;
+  font-family: "Fredoka One", cursive;
+  color: #5b99c2;
+}
+
+.restart-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #ff6347;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.restart-button:hover {
+  background-color: #ff4f3a;
 }
